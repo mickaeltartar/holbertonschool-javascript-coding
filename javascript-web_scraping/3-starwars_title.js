@@ -6,7 +6,7 @@ const moveId = process.argv[2];
 
 const url = `https://swapi-api.hbtn.io/api/films/${moveId}`;
 
-request(url, (error, body) => {
+request(url, (error, response, body) => {
   if (error) {
     console.error(`Error: ${error}`);
   } else {
