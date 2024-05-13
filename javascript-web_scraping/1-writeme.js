@@ -9,7 +9,5 @@ const [, , filePath, content] = process.argv;
 fs.writeFile(filePath, content, 'utf8', (err) => {
   if (err) {
     console.error(err);
-  } else {
-    console.log(`Content has been written to ${filePath}`);
   }
 });
