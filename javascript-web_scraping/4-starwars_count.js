@@ -9,7 +9,7 @@ request(apiUrl, (error, response, body) => {
     console.error(`Error: ${error}`);
   } else {
     const films = JSON.parse(body);
-    const filmsWithWedge = films.result.filter(film => film.characters.some(character => character.include('18'))
+    const filmsWithWedge = films.results.filter(film => film.characters.some(character => character.includes('18'))
     );
     console.log(filmsWithWedge.length);
   }
