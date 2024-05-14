@@ -8,9 +8,6 @@ const characterId = 18;
 
 let movieCount = 0;
 
-const url = `https://swapi-api.hbtn.io/api/films/`;
-
-
 request(apiUrl, (error, response, body) => {
   if (error) {
     console.error(`Error: ${error}`);
@@ -25,5 +22,5 @@ request(apiUrl, (error, response, body) => {
       }
     });
     console.log(movieCount);
-}
+  }
 });
